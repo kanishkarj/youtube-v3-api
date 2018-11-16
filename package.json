@@ -1,0 +1,22 @@
+{
+  "name": "youtube-client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kanishkarj/youtube-client.git"
+  },
+  "author": "kanishkarj",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kanishkarj/youtube-client/issues"
+  },
+  "homepage": "https://github.com/kanishkarj/youtube-client#readme",
+  "dependencies": {
+    "axios": "^0.18.0"
+  }
+}
