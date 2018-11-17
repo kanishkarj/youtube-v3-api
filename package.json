@@ -2,9 +2,9 @@
   "name": "youtube-client",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "build": "./node_modules/.bin/tsc",
+    "build": "rm -r dist/ && ./node_modules/.bin/tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
