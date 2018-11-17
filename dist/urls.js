@@ -5,3 +5,5 @@ exports.SEARCH_CHANNEL_URL = "https://www.googleapis.com/youtube/v3/channels";
 exports.SEARCH_PLAYLIST_URL = "https://www.googleapis.com/youtube/v3/playlists";
 exports.SEARCH_PLAYLIST_ITEMS_URL = "https://www.googleapis.com/youtube/v3/playlistItems";
 exports.SEARCH_VIDEO_URL = "https://www.googleapis.com/youtube/v3/videos";
+exports.SEARCH_COMMENTS_URL = "https://www.googleapis.com/youtube/v3/comments";
+exports.SEARCH_COMMENT_THREADS_URL = "https://www.googleapis.com/youtube/v3/commentThreads";

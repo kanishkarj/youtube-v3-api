@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "rm -r dist/ && ./node_modules/.bin/tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --reporter spec"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,8 @@
   },
   "devDependencies": {
     "@types/axios": "^0.14.0",
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
     "typescript": "^3.1.6"
   }
 }
