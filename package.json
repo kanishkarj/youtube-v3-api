@@ -1,5 +1,5 @@
 {
-  "name": "youtube-client",
+  "name": "youtube-v3-api",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kanishkarj/youtube-client.git"
+    "url": "git+https://github.com/kanishkarj/youtube-v3-api.git"
   },
   "author": "kanishkarj",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kanishkarj/youtube-client/issues"
+    "url": "https://github.com/kanishkarj/youtube-v3-api/issues"
   },
-  "homepage": "https://github.com/kanishkarj/youtube-client#readme",
+  "homepage": "https://github.com/kanishkarj/youtube-v3-api#readme",
   "dependencies": {
     "axios": "^0.18.0"
   },
