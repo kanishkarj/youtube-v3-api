@@ -1,6 +1,10 @@
-import { search_all, search_channel, search_comment_threads, search_comments, search_playlist, search_playlist_items, search_video } from './baseFunctions';
+import { search_channel_sections, search_channel } from './API/channel';
+import { search_comment_threads, search_comments } from './API/comment';
+import { search_playlist, search_playlist_items } from './API/playlist';
+import { search_all, search_video } from './API/video';
 export declare const searchAll: typeof search_all;
 export declare const searchChannel: typeof search_channel;
+export declare const searchChannelSections: typeof search_channel_sections;
 export declare const searchCommentThreads: typeof search_comment_threads;
 export declare const searchComments: typeof search_comments;
 export declare const searchPlaylist: typeof search_playlist;
