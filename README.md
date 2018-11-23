@@ -141,6 +141,7 @@ searchPlaylistItems(API_KEY: String, playlistId: String, maxResults: Number, arg
 
 ## Todo
 
+* Use the default Http module so that this module can be free from dependency.
 * Any missing basic API calls.
 * next and previous page.
 * Make typescript classes for the data returned so that additional functions can be attached like next page and previous page.
