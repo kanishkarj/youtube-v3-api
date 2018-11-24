@@ -4,7 +4,7 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "build": "rm -r dist/ && ./node_modules/.bin/tsc",
+    "build": "rm -rf dist/ && ./node_modules/.bin/tsc",
     "test": "mocha --reporter spec"
   },
   "repository": {
