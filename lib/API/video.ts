@@ -6,8 +6,8 @@ import {
 } from './urls';
 
 export function search_all (
-        API_KEY : String, 
-        q : String, 
+        API_KEY : string, 
+        q : string, 
         maxResults : Number,
         args : any = {},        
     ) {
@@ -33,8 +33,8 @@ export function search_all (
 }
 
 export function search_video (
-    API_KEY : String, 
-    id : String,
+    API_KEY : string, 
+    id : string,
     args : any = {},        
 ) {
     return new Promise<{}>((resolve, reject) => {

@@ -6,8 +6,8 @@ import {
 } from './urls';
 
 export function search_channel_sections (
-    API_KEY : String, 
-    channelId : String,
+    API_KEY : string, 
+    channelId : string,
     args : any = {},        
 ) {
     return new Promise<{}>((resolve, reject) => {
@@ -27,8 +27,8 @@ export function search_channel_sections (
 }
 
 export function search_channel (
-    API_KEY : String, 
-    id : String,
+    API_KEY : string, 
+    id : string,
     args : any = {},        
 ) {
     return new Promise<{}>((resolve, reject) => {

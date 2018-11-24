@@ -6,8 +6,8 @@ import {
 } from './urls';
 
 export function search_comment_threads (
-    API_KEY : String, 
-    videoId : String,
+    API_KEY : string, 
+    videoId : string,
     args : any = {},        
 ) {
     return new Promise<{}>((resolve, reject) => {
@@ -27,8 +27,8 @@ export function search_comment_threads (
 }
 
 export function search_comments (
-    API_KEY : String, 
-    parentId : String,
+    API_KEY : string, 
+    parentId : string,
     args : any = {},        
 ) {
     return new Promise<{}>((resolve, reject) => {
