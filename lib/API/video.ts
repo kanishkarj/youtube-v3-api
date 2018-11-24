@@ -1,4 +1,4 @@
-import axios from 'axios';
+import axios, {AxiosError} from 'axios';
 
 import { 
     SEARCH_ALL_URL,
@@ -26,8 +26,8 @@ export function search_all (
                 params : args
             }).then((response:any) => {
                 resolve(response.data);
-            }).catch((err) => {
-                reject(new Error(err));
+            }).catch((err : AxiosError) => {
+                reject(err);
             });
         });    
 }
@@ -47,8 +47,8 @@ export function search_video (
             params : args
         }).then((response:any) => {
             resolve(response.data);
-        }).catch((err) => {
-            reject(new Error(err));
+        }).catch((err : AxiosError) => {
+            reject(err);
         });
     });    
 }

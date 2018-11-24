@@ -1,4 +1,4 @@
-import axios from 'axios';
+import axios, {AxiosError} from 'axios';
 
 import { 
     SEARCH_CHANNEL_URL, 
@@ -20,8 +20,8 @@ export function search_channel_sections (
             params : args
         }).then((response:any) => {
             resolve(response.data);
-        }).catch((err) => {
-            reject(new Error(err));
+        }).catch((err : AxiosError) => {
+            reject(err);
         });
     });    
 }
@@ -41,8 +41,8 @@ export function search_channel (
             params : args
         }).then((response:any) => {
             resolve(response.data);
-        }).catch((err) => {
-            reject(new Error(err));
+        }).catch((err : AxiosError) => {
+            reject(err);
         });
     });    
 }

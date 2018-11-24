@@ -1,4 +1,4 @@
-import axios from 'axios';
+import axios, {AxiosError} from 'axios';
 
 import { 
     SEARCH_PLAYLIST_URL,
@@ -26,8 +26,8 @@ export function search_playlist (
             params : args
         }).then((response:any) => {
             resolve(response.data);
-        }).catch((err) => {
-            reject(new Error(err));
+        }).catch((err : AxiosError) => {
+            reject(err);
         });
     });    
 }
@@ -53,8 +53,8 @@ export function search_playlist_items (
             params : args
         }).then((response:any) => {
             resolve(response.data);
-        }).catch((err) => {
-            reject(new Error(err));
+        }).catch((err : AxiosError) => {
+            reject(err);
         });
     });    
 }
