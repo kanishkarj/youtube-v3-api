@@ -18,11 +18,46 @@ import {
     search_video
 } from './API/video';
 
-export const searchAll = search_all;
-export const searchChannel = search_channel;
-export const searchChannelSections = search_channel_sections;
-export const searchCommentThreads = search_comment_threads;
-export const searchComments = search_comments;
-export const searchPlaylist = search_playlist;
-export const searchPlaylistItems = search_playlist_items;
-export const searchVideo = search_video;
+class YoutubeDataAPI {
+    
+    apiKey : string;
+
+    constructor (API_KEY : string) {
+        this.apiKey  = API_KEY;
+    }
+
+    searchAll (q : string, maxResults : Number, args : any = {}) {
+        search_all (this.apiKey, q, maxResults, args);
+    }
+
+    searchVideo (id : string, args : any = {}) {
+        search_video (this.apiKey, id, args);
+    }
+
+    searchChannel (id : string, args : any = {}) {
+        search_channel (this.apiKey, id, args);
+    }
+
+    searchChannelSections (id : string, args : any = {}) {
+        search_channel_sections (this.apiKey, id, args);
+    }
+
+    searchComments (parentId : string, args : any = {}) {
+        search_comments (this.apiKey, parentId, args);
+    }
+
+    searchCommentThreads (videoId : string, args : any = {}) {
+        search_comment_threads (this.apiKey, videoId, args);
+    }
+
+    searchPlaylist (channelId : string, maxResults : Number, args : any = {}) {
+        search_playlist (this.apiKey, channelId, maxResults, args);
+    }
+
+    searchPlaylistItems (playlistId : string, maxResults : Number, args : any = {}) {
+        search_playlist_items (this.apiKey, playlistId, maxResults, args);
+    }
+    
+}
+
+export default YoutubeDataAPI;
