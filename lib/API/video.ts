@@ -8,7 +8,7 @@ import {
 export function search_all (
         API_KEY : string, 
         q : string, 
-        maxResults : Number,
+        maxResults : number,
         args : any = {},        
     ) {
         return new Promise<{}>((resolve, reject) => {

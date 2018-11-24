@@ -8,7 +8,7 @@ import {
 export function search_playlist (
     API_KEY : string, 
     channelId : string,
-    maxResults : Number,
+    maxResults : number,
     args : any = {},        
 ) {
     return new Promise<{}>((resolve, reject) => {
@@ -35,7 +35,7 @@ export function search_playlist (
 export function search_playlist_items (
     API_KEY : string, 
     playlistId : string,
-    maxResults : Number,
+    maxResults : number,
     args : any = {},        
 ) {
     return new Promise<{}>((resolve, reject) => {

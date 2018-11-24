@@ -38,7 +38,7 @@ api.searchAll(API_KEY,"Node Js",25).then((data) => {
 Returns a collection of search results that match the query parameters specified in the API request. By default, a search result set identifies matching video, channel, and playlist resources, but you can also configure queries to only retrieve a specific type of resource. 
 
 ```typescript
-searchAll(q: String, maxResults: Number, args?: any): Promise<{}>
+searchAll(q: string, maxResults: number, args?: any): Promise<{}>
 ```
 
 * API_KEY : The youtube API Key. See [here](https://developers.google.com/youtube/v3/docs/) to know about how to get an API KEY.
@@ -51,7 +51,7 @@ searchAll(q: String, maxResults: Number, args?: any): Promise<{}>
 Returns a list of videos that match the API request parameters.
 
 ```typescript
-searchVideo(id: String, args?: any): Promise<{}>
+searchVideo(id: string, args?: any): Promise<{}>
 ```
 
 * API_KEY : The youtube API Key. See [here](https://developers.google.com/youtube/v3/docs/) to know about how to get an API KEY.
@@ -64,7 +64,7 @@ searchVideo(id: String, args?: any): Promise<{}>
 Returns a collection of zero or more channel resources that match the request criteria.
 
 ```typescript
-searchChannel(id: String, args?: any): Promise<{}>
+searchChannel(id: string, args?: any): Promise<{}>
 ```
 
 * API_KEY : The youtube API Key. See [here](https://developers.google.com/youtube/v3/docs/) to know about how to get an API KEY.
@@ -77,7 +77,7 @@ searchChannel(id: String, args?: any): Promise<{}>
 Returns a list of videos that match the API request parameters.
 
 ```typescript
-searchChannelSections(channelId: String, args?: any): Promise<{}>
+searchChannelSections(channelId: string, args?: any): Promise<{}>
 ```
 
 * API_KEY : The youtube API Key. See [here](https://developers.google.com/youtube/v3/docs/) to know about how to get an API KEY.
@@ -90,7 +90,7 @@ searchChannelSections(channelId: String, args?: any): Promise<{}>
 Returns a list of comments that match the API request parameters.
 
 ```typescript
-searchComments(parentId: String, args?: any): Promise<{}>
+searchComments(parentId: string, args?: any): Promise<{}>
 ```
 
 * API_KEY : The youtube API Key. See [here](https://developers.google.com/youtube/v3/docs/) to know about how to get an API KEY.
@@ -103,7 +103,7 @@ searchComments(parentId: String, args?: any): Promise<{}>
 Returns a list of comment threads that match the API request parameters.
 
 ```typescript
-searchCommentThreads(videoId: String, args?: any): Promise<{}>
+searchCommentThreads(videoId: string, args?: any): Promise<{}>
 ```
 
 * API_KEY : The youtube API Key. See [here](https://developers.google.com/youtube/v3/docs/) to know about how to get an API KEY.
@@ -116,7 +116,7 @@ searchCommentThreads(videoId: String, args?: any): Promise<{}>
 Returns a collection of playlists that match the API request parameters. For example, you can retrieve all playlists that the authenticated user owns, or you can retrieve one or more playlists by their unique IDs. 
 
 ```typescript
-searchPlaylist(channelId: String, maxResults: Number, args?: any): Promise<{}>
+searchPlaylist(channelId: string, maxResults: number, args?: any): Promise<{}>
 ```
 
 * API_KEY : The youtube API Key. See [here](https://developers.google.com/youtube/v3/docs/) to know about how to get an API KEY.
@@ -130,7 +130,7 @@ searchPlaylist(channelId: String, maxResults: Number, args?: any): Promise<{}>
 Returns a collection of playlist items that match the API request parameters. You can retrieve all of the playlist items in a specified playlist or retrieve one or more playlist items by their unique IDs.
 
 ```typescript
-searchPlaylistItems(playlistId: String, maxResults: Number, args?: any): Promise<{}>
+searchPlaylistItems(playlistId: string, maxResults: number, args?: any): Promise<{}>
 ```
 
 * API_KEY : The youtube API Key. See [here](https://developers.google.com/youtube/v3/docs/) to know about how to get an API KEY.

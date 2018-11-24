@@ -26,7 +26,7 @@ export const YoutubeDataAPI = class {
         this.apiKey  = API_KEY;
     }
 
-    searchAll (q : string, maxResults : Number, args : any = {}) {
+    searchAll (q : string, maxResults : number, args : any = {}) {
         return search_all (this.apiKey, q, maxResults, args);
     }
 
@@ -50,11 +50,11 @@ export const YoutubeDataAPI = class {
         return search_comment_threads (this.apiKey, videoId, args);
     }
 
-    searchPlaylist (channelId : string, maxResults : Number, args : any = {}) {
+    searchPlaylist (channelId : string, maxResults : number, args : any = {}) {
         return search_playlist (this.apiKey, channelId, maxResults, args);
     }
 
-    searchPlaylistItems (playlistId : string, maxResults : Number, args : any = {}) {
+    searchPlaylistItems (playlistId : string, maxResults : number, args : any = {}) {
         return search_playlist_items (this.apiKey, playlistId, maxResults, args);
     }
     
