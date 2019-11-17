@@ -39,7 +39,7 @@ export function search_video (
 ) {
     return new Promise<{}>((resolve, reject) => {
 
-        args.part = "snippet,contentDetails,statistics";
+        args.part = args.part || "snippet,contentDetails,statistics";
         args.id = id;
         args.key = API_KEY;
 
